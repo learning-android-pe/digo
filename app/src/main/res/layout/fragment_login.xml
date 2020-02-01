@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:id="@+id/contenedor_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/col_White"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:id="@+id/login_header"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <com.github.florent37.shapeofview.shapes.ArcView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="5.0dp"
+                app:shape_arc_height="85dp"
+                app:shape_arc_position="bottom">
+
+
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:background="@drawable/background_negocios"></ImageView>
+
+
+            </com.github.florent37.shapeofview.shapes.ArcView>
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/imagen_pincheta"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:elevation="10dp"
+                android:visibility="gone"
+                app:civ_border_color="#A7A2A2"
+                app:civ_border_width="2dp">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_mirar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:elevation="10dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/mirar" />
+
+
+        </RelativeLayout>
+
+    
+    
+    
+    <LinearLayout
+        android:id="@+id/datos_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_header"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout_correo_login"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:background="@drawable/border_login"
+            android:elevation="10dp"
+            >
+
+
+            <EditText
+                android:id="@+id/correo_login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:fontFamily="@font/geo"
+                android:gravity="center"
+
+                android:hint="Email"
+
+
+                android:imeActionId="6"
+                android:imeOptions="actionUnspecified"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="#2583ef"
+                android:textColorHint="#A7A4A4" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <ImageButton
+            android:id="@+id/siguiente_login_kt"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/flecha1" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout_password_login"
+            android:layout_width="160dp"
+            android:layout_marginTop="10dp"
+
+            android:layout_height="40dp"
+            android:background="@drawable/border_login"
+            android:elevation="10dp"
+            android:fontFamily="@font/pesta1"
+            android:visibility="visible"
+            >
+
+
+            <EditText
+                android:id="@+id/password_login"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:fontFamily="@font/geo"
+                android:gravity="center"
+                android:hint="Password"
+
+
+                android:imeActionId="6"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="#2583ef"
+                android:textColorHint="#A7A4A4" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+            android:id="@+id/btn_ingresar_login_digo"
+
+            android:layout_width="120dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/boton_ingresar"
+            android:fontFamily="@font/pesta1"
+            android:layout_gravity="center"
+            android:text="Ingresar"
+            android:textColor="#fff"
+            android:textSize="15sp"
+
+            android:visibility="visible"
+            app:spinning_bar_color="#FFF"
+            app:spinning_bar_padding="4dp"
+            app:spinning_bar_width="4dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/contenedor_face"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datos_login"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/sesion_facebook"
+
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="@drawable/border_face"
+                android:scaleType="centerCrop"
+                android:src="@drawable/facebook"
+
+
+                />
+
+
+            <ImageButton
+                android:id="@+id/sesion_google"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/border_google"
+                android:elevation="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/google"
+
+
+                />
+
+        </LinearLayout>
+
+
+        <ImageButton
+            android:id="@+id/flecha_registro"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/flecha_abajo" />
+
+        <TextView
+            android:id="@+id/registrarme_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/michegar"
+            android:shadowColor="#645B5B"
+            android:shadowDx="1"
+            android:shadowDy="35"
+            android:shadowRadius="10"
+            android:text="Registrarme "
+            android:textSize="20sp"
+
+            >
+
+
+        </TextView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
+

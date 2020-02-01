@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/border_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/item_perfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="5dp"
+        android:orientation="vertical"
+        android:padding="7dp"
+        >
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/perfil_foto"
+            android:layout_centerVertical="true"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/user_imagen"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/perfil_foto"
+            android:layout_marginLeft="10dp"
+
+
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/nombre_perfil_foto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Carlos Alberto Caguana Tenezaca"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+
+            <LinearLayout
+                android:id="@+id/monedas_user"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="25dp"
+                    android:src="@drawable/monedas_digo"
+                    android:layout_height="25dp"/>
+                <TextView
+                    android:id="@+id/monedas_usuario"
+                    android:layout_width="match_parent"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="5dp"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/mensaje_list_chat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textSize="15sp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Ver perfil "
+                android:textColor="#808080" />
+        </LinearLayout>
+
+
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/perfil_foto"
+            android:layout_marginTop="10dp"
+            android:background="#2faaaaaa" />
+
+
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:padding="10dp"
+        tools:listitem="@layout/item_menu"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

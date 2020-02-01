@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Allow specific domains -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">iot.qubics.kr</domain>
+    </domain-config>
+
+    <!-- Allow all domains -->
+    <!--
+    <base-config cleartextTrafficPermitted="true" />
+    -->
+
+</network-security-config>

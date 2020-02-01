@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+   android:background="@drawable/border_transaparente"
+    android:layout_marginTop="5dp"
+    android:layout_height="wrap_content">
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/item_dia"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lunes"
+                android:fontFamily="@font/pesta1"
+                android:textSize="20sp"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/item_horas"
+                android:layout_weight="1"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:gravity="center"
+                android:text="00:00 24:00"
+                android:textColor="#4CAF50"
+                android:textSize="20sp"
+                />
+
+
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/item_deshabilitar"
+                android:layout_weight="0"
+                android:layout_gravity="center"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/quitar">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+
+        </LinearLayout>
+
+
+
+
+
+</LinearLayout>

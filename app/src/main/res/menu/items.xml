@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="alarm"
+        android:id="@+id/bottomNavigationAlarmMenuId"
+        android:icon="@drawable/chat_v3"/>
+    <item android:title="clock"
+        android:id="@+id/bottomNavigationClockMenuId"
+        android:icon="@drawable/chat_v3"/>
+    <item android:title="timer"
+        android:id="@+id/bottomNavigationTimerMenuId"
+        android:icon="@drawable/chat_v3"/>
+    <item android:title="stopwatch"
+        android:id="@+id/bottomNavigationStopWatchMenuId"
+        android:icon="@drawable/chat_v3"/>
+</menu>

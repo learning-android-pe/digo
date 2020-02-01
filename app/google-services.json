@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "795525528736",
+    "firebase_url": "https://digoec-9d7ad.firebaseio.com",
+    "project_id": "digoec-9d7ad",
+    "storage_bucket": "digoec-9d7ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:795525528736:android:30096ded59188e49221dc5",
+        "android_client_info": {
+          "package_name": "com.example.digo_ec"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "795525528736-hmgm9kp82q5k0s50j3g6ua0qhr12plbn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.digo_ec",
+            "certificate_hash": "95b29dc2ac148612205af86aae4dc5af6457966b"
+          }
+        },
+        {
+          "client_id": "795525528736-gvbi1cp310qo1ne9s7p1hhmo4npvs5do.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuYrHE6X8GQIVzKuA1k2GYzCWTTUvHIJU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "795525528736-gvbi1cp310qo1ne9s7p1hhmo4npvs5do.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

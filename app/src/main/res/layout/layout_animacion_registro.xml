@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/col_White"
+    android:id="@+id/animacion_digo"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+
+
+
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_view"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                app:lottie_rawRes="@raw/animacionlogo"
+                app:lottie_loop="true"
+                app:lottie_autoPlay="true" />
+
+
+
+
+<LinearLayout
+    android:id="@+id/presentacion_animacion"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_gravity="center"
+        android:id="@+id/perfil_animacion"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:src="@drawable/user_imagen"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Bienvenido"
+        android:textSize="25sp"
+        android:fontFamily="@font/geo"
+        >
+
+
+
+
+    </TextView>
+
+</LinearLayout>
+
+
+
+</RelativeLayout>

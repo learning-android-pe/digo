@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:background="@drawable/border_transaparente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Configure el horario de atencion luego de click en los dias que tendran ese horario o de click al icono x para inhabilitar el dia"
+        android:textSize="12sp"
+         />
+
+    <LinearLayout
+        android:id="@+id/layout_horaApertura"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hora de Apertura"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+
+            android:id="@+id/btn_horaApertura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="00:00"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_horaCierre"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hora de Cierre"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+
+            android:id="@+id/btn_horaCierre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="00:00"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_horario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/item_dias_laboral"
+
+        >
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/registrar_tienda"
+        android:layout_marginTop="8dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:background="@drawable/border_registro"
+        android:text="Registrar"
+       />
+
+
+
+
+
+</LinearLayout>

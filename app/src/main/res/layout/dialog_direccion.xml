@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/layout_sugerencia"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="@color/col_White"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:text="@string/direccion"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginVertical="4dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:maxLines="5"
+            android:minLines="1"
+            android:lines="5"
+            android:inputType="textMultiLine"
+            android:text="@string/direccionExacta"
+            android:layout_height="wrap_content"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/col_gris"
+            >
+
+
+        </View>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/border_transaparente"
+            >
+            <EditText
+                android:id="@+id/direccion_exacta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center"
+                android:imeActionId="6"
+                android:hint="@string/direccion"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textMultiLine"
+                android:maxLines="8"
+                android:minLines="1"
+                android:lines="8"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="#929191"
+                android:textColorHint="#CCCCCC" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@android:color/transparent"
+            android:gravity="end"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:orientation="horizontal"
+                android:background="@android:color/transparent"
+                >
+
+                <Button
+                    android:id="@+id/cancelar_direccion"
+                    android:layout_width="wrap_content"
+                    android:background="@android:color/transparent"
+
+                    android:layout_marginHorizontal="5dp"
+                    android:textColor="#2583ef"
+                    android:text="@string/cancel"
+                    android:layout_height="match_parent"/>
+                <Button
+                    android:id="@+id/enviar_direccion"
+                    android:elevation="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:background="@drawable/border_registro"
+                    android:textColor="@color/col_White"
+                    android:text="@string/enviar"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

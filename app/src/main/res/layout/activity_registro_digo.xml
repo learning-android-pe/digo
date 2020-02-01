@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quieres algo?"
+                android:textSize="22sp"
+                android:fontFamily="@font/pesta1"
+                />
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yo te lo "
+                android:textSize="22sp"
+                android:fontFamily="@font/pesta1"
+
+                />
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/imageView"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="4dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/logo_login"
+                />
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Llena tus datos"
+                android:fontFamily="@font/pesta1"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="y encuentra lo que quieras"
+                android:fontFamily="@font/pesta1"
+
+                android:textSize="15sp" />
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@drawable/border_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="5dp">
+                <LinearLayout
+                    android:layout_marginTop="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+
+
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_weight="0"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/registro_perfil"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/adduser"
+                        android:scaleType="fitXY"
+                        app:riv_border_width="1dip"
+                        app:riv_border_color="#E6E6E6"
+                        app:riv_corner_radius="10dp"
+                        app:riv_oval="false" />
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/textInputLayout2"
+                            android:layout_width="match_parent"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:background="@drawable/border_text"
+
+
+                            >
+
+                            <EditText
+                                android:id="@+id/registro_nombre"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@null"
+                                android:gravity="center"
+                                android:hint="Nombre"
+                                android:textSize="15sp"
+
+                                android:imeActionId="6"
+                                android:imeOptions="actionUnspecified"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:textAlignment="center"
+                                android:textColor="#2583ef"
+                                android:textColorHint="#CCCCCC" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/border_text"
+                            android:layout_alignParentRight="true"
+
+
+                            >
+
+                            <EditText
+                                android:id="@+id/registro_apellido"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@null"
+                                android:gravity="center"
+                                android:hint="Apellido"
+                                android:textSize="15sp"
+
+                                android:imeActionId="6"
+                                android:imeOptions="actionUnspecified"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:textAlignment="center"
+                                android:textColor="#2583ef"
+                                android:textColorHint="#CCCCCC" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/border_text"
+                    >
+
+                    <EditText
+                        android:id="@+id/registro_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="Email"
+                        android:textSize="15sp"
+
+
+                        android:imeActionId="6"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textAlignment="center"
+                        android:textColor="#2583ef"
+                        android:textColorHint="#CCCCCC" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/border_text"
+
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+
+
+                    >
+
+                    <in.anshul.libray.PasswordEditText
+                        android:id="@+id/registro_pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="Contraseña"
+                        android:textSize="15sp"
+
+
+
+                        android:imeActionId="6"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textAlignment="center"
+                        android:textColor="#2583ef"
+                        android:textColorHint="#CCCCCC" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/border_text"
+                    >
+
+                    <in.anshul.libray.PasswordEditText
+                        android:id="@+id/registro_repass"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="Repetir Contraseña"
+
+                        android:textSize="15sp"
+
+                        android:imeActionId="6"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textAlignment="center"
+                        android:textColor="#2583ef"
+                        android:textColorHint="#CCCCCC" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+
+
+
+            <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                android:id="@+id/btn_registro_digo"
+                android:layout_marginTop="10dp"
+                android:text="REGISTRARME !"
+                android:textSize="13sp"
+                android:textColor="#fff"
+                android:layout_width="125dp"
+                android:fontFamily="@font/pesta1"
+                android:layout_gravity="center"
+                android:layout_height="40dp"
+                android:background="@drawable/border_registro"
+                app:spinning_bar_width="4dp"
+                app:spinning_bar_color="#FFF"
+                app:spinning_bar_padding="4dp"
+                />
+
+
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+</ScrollView>

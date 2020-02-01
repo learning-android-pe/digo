@@ -1,0 +1,45 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/custom_marker_view"
+    android:layout_width="52dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout android:layout_width="50dp"
+        android:layout_height="59dp"
+        android:elevation="4dp"
+        android:backgroundTint="#4f80ea"
+        android:background="@drawable/marker">
+        <TextView android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="7sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000"
+            android:alpha="0.8"
+            android:id="@+id/name"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:padding="1dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="4dp"
+            android:src="@drawable/adduser"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@null"
+            android:elevation="2dp"
+            app:civ_border_color="#fff" />
+    </RelativeLayout> </RelativeLayout>

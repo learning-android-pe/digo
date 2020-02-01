@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:id="@+id/animacion_digo"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        >
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_weight="0"
+            android:layout_margin="3dp"
+
+            android:layout_gravity="center"
+            android:id="@+id/perfil_registro"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:src="@drawable/logo_login"            android:scaleType="fitXY"
+            app:riv_border_width="1dip"
+            app:riv_border_color="#E6E6E6"
+            app:riv_corner_radius="10dp"
+            app:riv_oval="false" />
+
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="125dp"
+            app:lottie_rawRes="@raw/registro"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true" />
+
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registrando "
+            android:textSize="32sp"
+            android:fontFamily="@font/pesta1"
+            />
+
+
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_gravity="center"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Credenciales"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/pesta2"
+                    />
+
+                <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                    android:id="@+id/btn_credenciales"
+                    android:textSize="15sp"
+                    android:textColor="#fff"
+                    android:layout_width="25dp"
+                    android:fontFamily="@font/pesta1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="25dp"
+                    android:background="@drawable/border_carga"
+                    app:spinning_bar_width="2dp"
+                    app:spinning_bar_color="#FFF"
+                    app:spinning_bar_padding="4dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_weight="1"
+
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Datos Usuario"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/pesta2"
+                    />
+
+                <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                    android:id="@+id/btn_datos"
+                    android:textSize="15sp"
+                    android:textColor="#fff"
+                    android:layout_width="25dp"
+                    android:fontFamily="@font/pesta1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="25dp"
+                    android:background="@drawable/border_carga"
+                    app:spinning_bar_width="2dp"
+                    app:spinning_bar_color="#FFF"
+                    app:spinning_bar_padding="4dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_gravity="center"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_weight="1"
+
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Foto Perfil"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/pesta2"
+                    />
+
+                <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                    android:id="@+id/btn_foto"
+                    android:textSize="15sp"
+                    android:textColor="#fff"
+                    android:layout_width="25dp"
+                    android:fontFamily="@font/pesta1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="25dp"
+                    android:background="@drawable/border_carga"
+                    app:spinning_bar_width="2dp"
+                    app:spinning_bar_color="#FFF"
+                    app:spinning_bar_padding="4dp"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

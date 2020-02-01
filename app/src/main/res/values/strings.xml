@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Digo_ec</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fallo">Algo fallo</string>
+
+
+    <string name="no_se_registro"> Hubo un problema, intente nuevamente</string>
+    <string name="no_coinciden_contra">Las contraseñas no coinciden</string>
+    <string name="error_clave_corta">La contraseña es muy corta</string>
+    <string name="algoFalloFoto">Algo falló al subir la imagen</string>
+    <string name="mensaje_ubicacion">Asegúrate que la ubicación sea la correcta, tus clientes vendrán a este punto.</string>
+    <string name="categoria">Categoría</string>
+
+    <string name="sub_categorias">Subcategoría: </string>
+    <string name="todosLosdatosObligatorios">Datos obligatorios.</string>
+    <string name="noHaPuestoFoto"> No ha puesto foto de perfil, la foto de perfil ayuda a ganar la atención de los clientes.</string>
+    <string name="noHaPuestoPortada"> No ha puesto foto de Portada esto  ayudara a ganar la atención de los clientes.</string>
+    <string name="noUbicacion">No ha seleccionado ubicación</string>
+    <string name="alerta">Alerta</string>
+    <string name="subiendoDatos">Registrando...</string>
+    <string name="algoFallosubirFoto">Error al subir la foto</string>
+    <string name="tiendaRegistradaExitosamente">Tienda registrada con éxito.</string>
+    <string name="direccion">Dirección </string>
+    <string name="direccionExacta">Si la ubicación proporcionada por el mapa no es acertada,personalice su dirección con nombre de calles o referencias donde sus clientes podran guiarse y visitarlo </string>
+
+    <string name="ok">OK </string>
+    <string name="entiendo">Entiendo </string>
+    <string name="enviar">Enviar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="sugerencia">Sugerencia</string>
+
+    <string name="facebook_app_compartir" translatable="false">com.facebook.app.FacebookContentProvider2762788303948179</string>
+    <string name="facebook_app_id">2762788303948179</string>
+    <string name="fb_login_protocol_scheme">fb2762788303948179</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="estamos_para_ayudarte">Digo está pendiente de ti, envíanos tu sugerencia para que nuestros analistas la pongan en marcha! </string>
+    <string name="tipoNegocio">Si no encontraste el tipo de Negocio escriba la categoria y subcategoria que considere para su negocio,envíanos tu sugerencia para que nuestros analistas la pongan en marcha!
+    Registre su negocio en alguna categoria similar le haremos saber cuando se habilite la nueva sugerencia!
+    </string>
+
+
+</resources>
